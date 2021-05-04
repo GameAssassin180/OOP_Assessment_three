@@ -1,0 +1,13 @@
+C:\Users\Mitch\source\repos\OOP_Assessment_Three\OOP_Assessment_Three\bin\Debug\netcoreapp3.1\OOP_Assessment_Three.exe
+C:\Users\Mitch\source\repos\OOP_Assessment_Three\OOP_Assessment_Three\bin\Debug\netcoreapp3.1\OOP_Assessment_Three.deps.json
+C:\Users\Mitch\source\repos\OOP_Assessment_Three\OOP_Assessment_Three\bin\Debug\netcoreapp3.1\OOP_Assessment_Three.runtimeconfig.json
+C:\Users\Mitch\source\repos\OOP_Assessment_Three\OOP_Assessment_Three\bin\Debug\netcoreapp3.1\OOP_Assessment_Three.runtimeconfig.dev.json
+C:\Users\Mitch\source\repos\OOP_Assessment_Three\OOP_Assessment_Three\bin\Debug\netcoreapp3.1\OOP_Assessment_Three.dll
+C:\Users\Mitch\source\repos\OOP_Assessment_Three\OOP_Assessment_Three\bin\Debug\netcoreapp3.1\OOP_Assessment_Three.pdb
+C:\Users\Mitch\source\repos\OOP_Assessment_Three\OOP_Assessment_Three\obj\Debug\netcoreapp3.1\OOP_Assessment_Three.csprojAssemblyReference.cache
+C:\Users\Mitch\source\repos\OOP_Assessment_Three\OOP_Assessment_Three\obj\Debug\netcoreapp3.1\OOP_Assessment_Three.AssemblyInfoInputs.cache
+C:\Users\Mitch\source\repos\OOP_Assessment_Three\OOP_Assessment_Three\obj\Debug\netcoreapp3.1\OOP_Assessment_Three.AssemblyInfo.cs
+C:\Users\Mitch\source\repos\OOP_Assessment_Three\OOP_Assessment_Three\obj\Debug\netcoreapp3.1\OOP_Assessment_Three.csproj.CoreCompileInputs.cache
+C:\Users\Mitch\source\repos\OOP_Assessment_Three\OOP_Assessment_Three\obj\Debug\netcoreapp3.1\OOP_Assessment_Three.dll
+C:\Users\Mitch\source\repos\OOP_Assessment_Three\OOP_Assessment_Three\obj\Debug\netcoreapp3.1\OOP_Assessment_Three.pdb
+C:\Users\Mitch\source\repos\OOP_Assessment_Three\OOP_Assessment_Three\obj\Debug\netcoreapp3.1\OOP_Assessment_Three.genruntimeconfig.cache
