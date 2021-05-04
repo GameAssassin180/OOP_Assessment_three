@@ -7,8 +7,7 @@ namespace OOP_Assessment_Three
     class Hand
     {
         public List<Card> HandList = new List<Card>();
-        private Deck deck = new Deck();
-        public void BuildHand()
+        protected void BuildHand(Deck deck)
         {
             HandList.Clear();
             for (int i = 0; i < 10; i++)

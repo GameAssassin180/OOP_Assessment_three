@@ -35,10 +35,18 @@ namespace OOP_Assessment_Three
                 Random rnd = new Random();
                 int Location1 = rnd.Next(0, 52);
                 int Location2 = rnd.Next(0, 52);
-
-                Card temp = deckList[Location1];
-                deckList[Location1] = deckList[Location2];
-                deckList[Location2] = temp;
+                if(Location1 == Location2)
+                {
+                    i--;
+                    continue;
+                }
+                else
+                {
+                    Card temp = deckList[Location1];
+                    deckList[Location1] = deckList[Location2];
+                    deckList[Location2] = temp;
+                    continue;
+                }
             }
         }
         // this method displays one crad to the user then removes it from the list of cards. 

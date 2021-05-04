@@ -9,9 +9,6 @@ namespace OOP_Assessment_Three
         public abstract int ID();
         public abstract int Score();
 
-        public void GetHand()
-        {
-            BuildHand();
-        }
+        public abstract void Play();
     }
 }

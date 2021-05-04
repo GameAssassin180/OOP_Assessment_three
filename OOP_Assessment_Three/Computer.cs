@@ -9,9 +9,22 @@ namespace OOP_Assessment_Three
         public override int ID() => 2;
         public override int Score() => 0;
 
-        public Computer()
+        public Computer(Deck deck)
         {
-            GetHand();
+            BuildHand(deck);
+        }
+        
+        public override void Play()
+        {
+            List<Card> CardsPlayed = new List<Card>();
+            CardsPlayed.Add(HandList[0]);
+            CardsPlayed.Add(HandList[1]);
+            int Total = CardsPlayed[0].cardNumber + CardsPlayed[1].cardNumber;
+            Console.WriteLine("The computer has played " + CardsPlayed[0].cardName + " and " + CardsPlayed[1].cardName + "\nGiving them a total of " + Total);
+            HandList.RemoveAt(0);
+            HandList.RemoveAt(0);
+            CardsPlayed.RemoveAt(0);
+            CardsPlayed.RemoveAt(0);
         }
     }
 }

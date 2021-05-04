@@ -6,40 +6,32 @@ namespace OOP_Assessment_Three
     {
         static void Main(string[] args)
         {
-            Player human = new Human();
-            Player computer = new Computer();
-            while (true)// starts a loop that will continue till the user is finished or the deck is empty.
+            while (true)
             {
-                Console.Write("\nPress Enter to draw a card");
-                string keypress = Console.ReadLine();
-                if (keypress == "")
+                Deck deck = new Deck();
+                Player human = new Human(deck);
+                Player computer = new Computer(deck);
+                Console.WriteLine($"Welcome to the card game lincoln. " +
+                        $"\nThe rules are very basic you and the computer will be delt 10 cards from a shuffled deck," +
+                        $"\nEach round you and the computer will draw 2 cards, the values of these cards will be added," +
+                        $"\nWho ever has the highest total wins." +
+                        $"\nPress the enter key to begin the game.");
+                while (true)// starts a loop that will continue till the user is finished or the deck is empty.
                 {
-                    Console.WriteLine(human.HandList[0].cardName);
-                    Console.WriteLine(human.HandList[1].cardName);
-                    Console.WriteLine(human.HandList[2].cardName);
-                    Console.WriteLine(human.HandList[3].cardName);
-                    Console.WriteLine(human.HandList[4].cardName);
-                    Console.WriteLine(human.HandList[5].cardName);
-                    Console.WriteLine(human.HandList[6].cardName);
-                    Console.WriteLine(human.HandList[7].cardName);
-                    Console.WriteLine(human.HandList[8].cardName);
-                    Console.WriteLine(human.HandList[9].cardName);
-                    Console.WriteLine("");
-                    Console.WriteLine(computer.HandList[0].cardName);
-                    Console.WriteLine(computer.HandList[1].cardName);
-                    Console.WriteLine(computer.HandList[2].cardName);
-                    Console.WriteLine(computer.HandList[3].cardName);
-                    Console.WriteLine(computer.HandList[4].cardName);
-                    Console.WriteLine(computer.HandList[5].cardName);
-                    Console.WriteLine(computer.HandList[6].cardName);
-                    Console.WriteLine(computer.HandList[7].cardName);
-                    Console.WriteLine(computer.HandList[8].cardName);
-                    Console.WriteLine(computer.HandList[9].cardName);
-                }
-                else
-                {
-                    Console.WriteLine("Invalid entry please try again"); // catches the uesrs invalid input.
-                    continue;
+                    int Rounds = 1;
+                    if (Console.ReadKey().Key == ConsoleKey.Enter)
+                    {
+                        Console.Clear();
+                        while(true)
+                        {
+
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("\nInvalid key");
+                        continue;
+                    }
                 }
             }
         }
