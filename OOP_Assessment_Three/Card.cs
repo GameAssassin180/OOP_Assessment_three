@@ -6,7 +6,8 @@ namespace OOP_Assessment_Three
 {
     class Card
     {
-        // below is an enum list of suits, an enum will keep these values constant and allow easier access then an array. 
+        // Below is an enum list of suits, an enum will keep these values constant and allow easier access then an array. 
+        // Info gathered at https://www.w3schools.com/cs/cs_enums.asp.
         public enum cardType
         {
             Diamonds,
@@ -30,13 +31,13 @@ namespace OOP_Assessment_Three
         {
             get
             {
-                string name = string.Empty; // initiates a sting variable called name that has now value. 
+                string name = string.Empty; // Initiates a sting variable called name that has now value. 
                 switch (cardNumber)
                 {
-                    case (14): // if the card number equals 1 this case is activated,
+                    case (14): // If the card number equals 1 this case is activated,
                         name = "Ace"; // the name variable is changed to Ace,
                         break; // and the code breaks. 
-                               // the above is true for all below.
+                               // The above is true for all below.
                     case (11):
                         name = "Jack";
                         break;
@@ -46,14 +47,14 @@ namespace OOP_Assessment_Three
                     case (13):
                         name = "King";
                         break;
-                    default: // if none of the above are activated this is run as the default,
+                    default: // If none of the above are activated this is run as the default,
                         name = cardNumber.ToString(); // the number is converted to a string so 2 become Two. 
                         break;
                 }
                 return name; // Returns the name varable. 
             }
         }
-        // the below method creates the full name of the card. 
+        // The below method creates the full name of the card. 
         public string cardName
         {
             get
@@ -61,7 +62,7 @@ namespace OOP_Assessment_Three
                 return pictureCards + " of " + suit.ToString(); // concatinates the cards number or name and its suit before returning the variable. 
             }
         }
-        // below is the construtor for this class it has 2 arguments 1 relates the the cards number the other relates to the cards suit. 
+        // Below is the construtor for this class it has 2 arguments 1 relates the the cards number the other relates to the cards suit. 
         public Card(int number, cardType suit)
         {
             cardNumber = number + 1; // passes the arguments value to the cardNumber get set method before it is used. 

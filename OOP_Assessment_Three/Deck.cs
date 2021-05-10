@@ -6,7 +6,7 @@ namespace OOP_Assessment_Three
 {
     class Deck
     {
-        // below is a list of cards from the card class
+        // Below is a list of cards from the card class
         public List<Card> deckList = new List<Card>();
         // The below method will fill this list with 52 differnt cards.
         public void deckFiller()
@@ -30,18 +30,19 @@ namespace OOP_Assessment_Three
         // This method shuffles the deck.
         public void shuffle()
         {
-            for(int i = 0; i < 52; i++)
+            for(int i = 0; i < 100; i++)
             {
                 Random rnd = new Random();
-                int Location1 = rnd.Next(0, 52);
+                int Location1 = rnd.Next(0, 52); // Generates a number between 0 and 51.
                 int Location2 = rnd.Next(0, 52);
-                if(Location1 == Location2)
+                if(Location1 == Location2)// Enusres that a card isn't swapped with itself.
                 {
                     i--;
                     continue;
                 }
                 else
                 {
+                    // These four lines of code swap the 2 cards in the deck list. 
                     Card temp = deckList[Location1];
                     deckList[Location1] = deckList[Location2];
                     deckList[Location2] = temp;
@@ -49,17 +50,19 @@ namespace OOP_Assessment_Three
                 }
             }
         }
-        // this method displays one crad to the user then removes it from the list of cards. 
+        // This method displays one crad to the user then removes it from the list of cards. 
         public void deal()
         {
             Console.WriteLine(deckList[0].cardName);
             deckList.RemoveAt(0);
         }
-
+        // This is the constructor for this class, whenever a new deck is created this is what will happen. 
         public Deck()
         {
             deckFiller();
             shuffle();
+            Program P = new Program(); // Creates a new instance of the program class. 
+            P.CreatedDeck(); // Runs the created deck method from the program class. 
         }
     }
 }
