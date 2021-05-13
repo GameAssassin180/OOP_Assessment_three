@@ -6,11 +6,18 @@ namespace OOP_Assessment_Three
 {
     class Computer : Player
     {
-        public override int ID() => 2;
+        //The below will override the ID interger and return a value of 2 when called by a computer object.
+        public override int ID
+        {
+            get { return ID = 2; }
+        }
+        // This constructor does the same as the Human class constructor but for this class. 
         public Computer(Deck deck)
         {
             BuildHand(deck);
         }
+        // This method is an override of the abstract method in the player class, this is dynamic polymorphism, 
+        // This is run when ever the computer takes their turn. and is practically identical to the play method in the human class. 
         public override void Play()
         {
             List<Card> CardsPlayed = new List<Card>();

@@ -6,7 +6,10 @@ namespace OOP_Assessment_Three
 {
     class Hand
     {
+        //This instatiates a list full of Card objects.
         public List<Card> HandList = new List<Card>();
+        //The below method fills the above list with 10 cards and removes them from the deck.
+        //A deck object has to be created first and passed to the method.
         protected void BuildHand(Deck deck)
         {
             HandList.Clear();

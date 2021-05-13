@@ -9,7 +9,7 @@ namespace OOP_Assessment_Three
         // Below is a list of cards from the card class
         public List<Card> deckList = new List<Card>();
         // The below method will fill this list with 52 differnt cards.
-        public void deckFiller()
+        public void DeckFiller()
         {
             // the loop will run 52 times.
             for (int i = 0; i < 52; i++)
@@ -21,14 +21,14 @@ namespace OOP_Assessment_Three
             }
         }
         // The below method checks if the deck is empty if it is it closes the program. 
-        public void isEmpty()
+        public void IsEmpty()
         {
             Console.WriteLine("The deck is empty, the program will close in 5 seconds.");
             System.Threading.Thread.Sleep(5000);
             System.Environment.Exit(0);
         }
         // This method shuffles the deck.
-        public void shuffle()
+        public void Shuffle()
         {
             for(int i = 0; i < 100; i++)
             {
@@ -51,7 +51,7 @@ namespace OOP_Assessment_Three
             }
         }
         // This method displays one crad to the user then removes it from the list of cards. 
-        public void deal()
+        public void Deal()
         {
             Console.WriteLine(deckList[0].cardName);
             deckList.RemoveAt(0);
@@ -59,8 +59,8 @@ namespace OOP_Assessment_Three
         // This is the constructor for this class, whenever a new deck is created this is what will happen. 
         public Deck()
         {
-            deckFiller();
-            shuffle();
+            DeckFiller();
+            Shuffle();
             Program P = new Program(); // Creates a new instance of the program class. 
             P.CreatedDeck(); // Runs the created deck method from the program class. 
         }
