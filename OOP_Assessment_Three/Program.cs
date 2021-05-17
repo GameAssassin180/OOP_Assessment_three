@@ -1,9 +1,11 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Text;
 
 namespace OOP_Assessment_Three
 {
+    // Log file located at OOP_Assessment_Three\OOP_Assessment_Three\bin\Debug\netcoreapp3.1
     class Program
     {
         // This method allows access to the custom exception DrawException if triggered it will throw the exception.
@@ -39,6 +41,7 @@ namespace OOP_Assessment_Three
             Console.WriteLine($"The last hand came out as a draw due to this 2 random cards will be picked." +
                 $"\nThe bigger card value wins the game. ");
             Console.WriteLine("\nPress enter when ready...");
+            File.AppendAllText("Log.txt", "The last hand was a draw.\n");
             // Loops until the user pressed enter no other key will be accepted. 
             while (true)
             {
@@ -56,6 +59,8 @@ namespace OOP_Assessment_Three
             // Infroms the user what cards have been drawn from the deck.
             Console.WriteLine("Your cards is: the " + HCard.cardName);
             Console.WriteLine("The computer card is: the " + CCard.cardName);
+            File.AppendAllText("Log.txt", "Your cards " + HCard.cardName + "\n");
+            File.AppendAllText("Log.txt", "Computer card  " + CCard.cardName + "\n");
             // Sees if the 2 random cards have the same value. if they do throws an exception and recalls the function. 
             try
             {
@@ -73,11 +78,13 @@ namespace OOP_Assessment_Three
             if (HCard.cardNumber.CompareTo(CCard.cardNumber) == -1)
             {
                 Console.WriteLine("The computer has won.");
+                File.AppendAllText("Log.txt", "The computer has won.\n");
                 computer.ScoreSet = computer.ScoreSet++;
             }
             else if (HCard.cardNumber.CompareTo(CCard.cardNumber) == 1)
             {
                 Console.WriteLine("You have won well done.");
+                File.AppendAllText("Log.txt", "You have won well done.\n");
                 human.ScoreSet = human.ScoreSet++;
             }
         }
@@ -95,6 +102,7 @@ namespace OOP_Assessment_Three
             Console.WriteLine($"The game came out as a draw due to this 2 random cards will be picked." +
                 $"\nThe bigger card value wins the game. ");
             Console.WriteLine("\nPress enter when ready...");
+            File.AppendAllText("Log.txt", "The game was a draw.\n");
             while (true)
             {
                 if (Console.ReadKey().Key == ConsoleKey.Enter)
@@ -110,6 +118,8 @@ namespace OOP_Assessment_Three
             }
             Console.WriteLine("Your cards is: the " + HCard.cardName);
             Console.WriteLine("The computer card is: the " + CCard.cardName);
+            File.AppendAllText("Log.txt", "Your cards " + HCard.cardName + "\n");
+            File.AppendAllText("Log.txt", "Computer card " + CCard.cardName + "\n");
             try 
             {
                 DrawCatch(HCard.cardNumber, CCard.cardNumber);
@@ -124,18 +134,25 @@ namespace OOP_Assessment_Three
             if (HCard.cardNumber.CompareTo(CCard.cardNumber) == -1)
             {
                 Console.WriteLine("The computer has won.");
+                File.AppendAllText("Log.txt", "The computer has won.\n");
             }
             else if (HCard.cardNumber.CompareTo(CCard.cardNumber) == 1)
             {
                 Console.WriteLine("You have won well done.");
+                File.AppendAllText("Log.txt", "You have won well done.\n");
             }
         }
 
         static void Main()
         {
+            // Clears the Log file ready for this round of games.
+            var path = File.Create("Log.txt");
+            path.Close();
+            // Any major point of the game is placed into the log file
             // Starts a loop in which the game will run until the user wishes to exit. 
             while (true)
             {
+                File.AppendAllText("Log.txt", "New game\n");
                 // Explains the rules to the user. 
                 Console.WriteLine($"Welcome to the card game, Lincoln. " +
                         $"\nThe rules are very basic you and the computer will be delt 10 cards from a shuffled deck," +
@@ -185,6 +202,7 @@ namespace OOP_Assessment_Three
                                     // If the totals where the same the point is carried.
                                     TempScore = 1;
                                     Console.WriteLine("\nBoth the score where the same the point has been carried.");
+                                    File.AppendAllText("Log.txt", "Both the score where the same the point has been carried.\n");
                                 }
                                 else if(human.Total.CompareTo(computer.Total) == 1)
                                 {
@@ -193,6 +211,7 @@ namespace OOP_Assessment_Three
                                     TempScore = 0;
                                     WinnerID = human.ID;
                                     Console.WriteLine(("\nYou have won this round with " + human.Total + "."));
+                                    File.AppendAllText("Log.txt", "You have won this round\n");
                                 }
                                 else if (human.Total.CompareTo(computer.Total) == -1)
                                 {
@@ -201,6 +220,7 @@ namespace OOP_Assessment_Three
                                     TempScore = 0;
                                     WinnerID = computer.ID;
                                     Console.WriteLine("\nBetter luck next time the computer won this round with " + computer.Total + ".");
+                                    File.AppendAllText("Log.txt", "Computer won this round\n");
                                 }
                                 // Increases the round count by one. 
                                 Rounds++;
@@ -243,12 +263,14 @@ namespace OOP_Assessment_Three
                                 {
                                     // If the player wins this message is displayed.
                                     Console.WriteLine(human.ScoreSet + "/" + computer.ScoreSet +" Congratulations you have won!!");
+                                    File.AppendAllText("Log.txt", human.ScoreSet + "/" + computer.ScoreSet + " Congratulations you have won!!\n");
                                     break;
                                 }
                                 else if (human.ScoreSet.CompareTo(computer.ScoreSet) == -1)
                                 {
                                     // If the computer wins this message is displayed. 
                                     Console.WriteLine(computer.ScoreSet + "/" + human.ScoreSet + " Sorry the computer beat you.");
+                                    File.AppendAllText("Log.txt", computer.ScoreSet + "/" + human.ScoreSet + " Sorry the computer beat you.\n");
                                     break;
                                 }
                             }

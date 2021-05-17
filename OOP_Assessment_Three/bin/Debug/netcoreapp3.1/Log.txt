@@ -1,0 +1,303 @@
+New game
+4 of Spades
+3 of Spades
+Jack of Spades
+Queen of Hearts
+5 of Diamonds
+7 of Diamonds
+Jack of Diamonds
+King of Hearts
+9 of Hearts
+6 of Diamonds
+Queen of Diamonds
+10 of Hearts
+4 of Clubs
+3 of Hearts
+5 of Spades
+Ace of Diamonds
+10 of Diamonds
+Queen of Clubs
+Ace of Spades
+4 of Hearts
+8 of Clubs
+8 of Hearts
+King of Diamonds
+Queen of Spades
+6 of Hearts
+Ace of Clubs
+6 of Spades
+5 of Clubs
+7 of Clubs
+2 of Diamonds
+5 of Hearts
+9 of Diamonds
+2 of Hearts
+2 of Spades
+Jack of Hearts
+10 of Clubs
+Ace of Hearts
+King of Spades
+7 of Hearts
+9 of Clubs
+7 of Spades
+8 of Diamonds
+6 of Clubs
+2 of Clubs
+4 of Diamonds
+King of Clubs
+8 of Spades
+10 of Spades
+3 of Clubs
+3 of Diamonds
+9 of Spades
+Jack of Clubs
+
+4 of Spades
+3 of Spades
+Jack of Spades
+Queen of Hearts
+5 of Diamonds
+7 of Diamonds
+Jack of Diamonds
+King of Hearts
+9 of Hearts
+6 of Diamonds
+
+Queen of Diamonds
+10 of Hearts
+4 of Clubs
+3 of Hearts
+5 of Spades
+Ace of Diamonds
+10 of Diamonds
+Queen of Clubs
+Ace of Spades
+4 of Hearts
+Card 1 4 of Spades Card 2 3 of Spades
+Total 7.
+Card 1 Queen of Diamonds Card 2 10 of Hearts
+Total 22.
+Computer won this round
+Card 1 4 of Clubs Card 2 3 of Hearts
+Total 7.
+Card 1 Jack of Spades Card 2 Queen of Hearts
+Total 23.
+You have won this round
+Card 1 5 of Diamonds Card 2 7 of Diamonds
+Total 12.
+Card 1 5 of Spades Card 2 Ace of Diamonds
+Total 19.
+Computer won this round
+Card 1 10 of Diamonds Card 2 Queen of Clubs
+Total 22.
+Card 1 Jack of Diamonds Card 2 King of Hearts
+Total 24.
+You have won this round
+Card 1 9 of Hearts Card 2 6 of Diamonds
+Total 15.
+Card 1 Ace of Spades Card 2 4 of Hearts
+Total 18.
+Computer won this round
+3/2 Sorry the computer beat you.
+New game
+9 of Spades
+2 of Diamonds
+10 of Diamonds
+4 of Clubs
+2 of Hearts
+10 of Clubs
+5 of Hearts
+7 of Spades
+6 of Spades
+6 of Clubs
+King of Clubs
+3 of Diamonds
+10 of Hearts
+3 of Hearts
+9 of Diamonds
+King of Diamonds
+8 of Diamonds
+Ace of Diamonds
+7 of Clubs
+Ace of Hearts
+5 of Diamonds
+6 of Hearts
+King of Hearts
+Jack of Spades
+4 of Spades
+9 of Clubs
+9 of Hearts
+Jack of Diamonds
+Queen of Diamonds
+Jack of Clubs
+6 of Diamonds
+3 of Clubs
+Ace of Spades
+Ace of Clubs
+Queen of Spades
+8 of Spades
+King of Spades
+7 of Diamonds
+3 of Spades
+Jack of Hearts
+2 of Clubs
+2 of Spades
+Queen of Hearts
+5 of Spades
+10 of Spades
+4 of Diamonds
+8 of Clubs
+Queen of Clubs
+5 of Clubs
+8 of Hearts
+7 of Hearts
+4 of Hearts
+
+9 of Spades
+2 of Diamonds
+10 of Diamonds
+4 of Clubs
+2 of Hearts
+10 of Clubs
+5 of Hearts
+7 of Spades
+6 of Spades
+6 of Clubs
+
+King of Clubs
+3 of Diamonds
+10 of Hearts
+3 of Hearts
+9 of Diamonds
+King of Diamonds
+8 of Diamonds
+Ace of Diamonds
+7 of Clubs
+Ace of Hearts
+Card 1 9 of Spades Card 2 2 of Diamonds
+Total 11.
+Card 1 King of Clubs Card 2 3 of Diamonds
+Total 16.
+Computer won this round
+Card 1 10 of Hearts Card 2 3 of Hearts
+Total 13.
+Card 1 10 of Diamonds Card 2 4 of Clubs
+Total 14.
+You have won this round
+Card 1 2 of Hearts Card 2 10 of Clubs
+Total 12.
+Card 1 9 of Diamonds Card 2 King of Diamonds
+Total 22.
+Computer won this round
+Card 1 8 of Diamonds Card 2 Ace of Diamonds
+Total 22.
+Card 1 5 of Hearts Card 2 7 of Spades
+Total 12.
+Computer won this round
+Card 1 7 of Clubs Card 2 Ace of Hearts
+Total 21.
+Card 1 6 of Spades Card 2 6 of Clubs
+Total 12.
+Computer won this round
+4/1 Sorry the computer beat you.
+New game
+King of Hearts
+3 of Clubs
+Ace of Spades
+5 of Hearts
+Jack of Spades
+3 of Diamonds
+6 of Diamonds
+6 of Clubs
+Ace of Clubs
+10 of Clubs
+Jack of Clubs
+7 of Spades
+2 of Hearts
+9 of Clubs
+7 of Clubs
+8 of Spades
+King of Diamonds
+2 of Spades
+4 of Clubs
+Queen of Diamonds
+10 of Diamonds
+10 of Hearts
+5 of Spades
+3 of Spades
+King of Spades
+7 of Diamonds
+Jack of Hearts
+5 of Clubs
+8 of Clubs
+2 of Clubs
+8 of Hearts
+Queen of Hearts
+10 of Spades
+9 of Diamonds
+King of Clubs
+7 of Hearts
+Ace of Hearts
+Queen of Clubs
+8 of Diamonds
+5 of Diamonds
+Jack of Diamonds
+4 of Spades
+4 of Hearts
+2 of Diamonds
+6 of Spades
+4 of Diamonds
+3 of Hearts
+6 of Hearts
+Queen of Spades
+Ace of Diamonds
+9 of Spades
+9 of Hearts
+
+King of Hearts
+3 of Clubs
+Ace of Spades
+5 of Hearts
+Jack of Spades
+3 of Diamonds
+6 of Diamonds
+6 of Clubs
+Ace of Clubs
+10 of Clubs
+
+Jack of Clubs
+7 of Spades
+2 of Hearts
+9 of Clubs
+7 of Clubs
+8 of Spades
+King of Diamonds
+2 of Spades
+4 of Clubs
+Queen of Diamonds
+Card 1 King of Hearts Card 2 3 of Clubs
+Total 16.
+Card 1 Jack of Clubs Card 2 7 of Spades
+Total 18.
+Computer won this round
+Card 1 2 of Hearts Card 2 9 of Clubs
+Total 11.
+Card 1 Ace of Spades Card 2 5 of Hearts
+Total 19.
+You have won this round
+Card 1 Jack of Spades Card 2 3 of Diamonds
+Total 14.
+Card 1 7 of Clubs Card 2 8 of Spades
+Total 15.
+Computer won this round
+Card 1 King of Diamonds Card 2 2 of Spades
+Total 15.
+Card 1 6 of Diamonds Card 2 6 of Clubs
+Total 12.
+Computer won this round
+Card 1 4 of Clubs Card 2 Queen of Diamonds
+Total 16.
+Card 1 Ace of Clubs Card 2 10 of Clubs
+Total 24.
+You have won this round
+3/2 Sorry the computer beat you.

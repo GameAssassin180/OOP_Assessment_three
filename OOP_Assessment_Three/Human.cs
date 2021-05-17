@@ -1,9 +1,11 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Text;
 
 namespace OOP_Assessment_Three
 {
+    // Log file located at OOP_Assessment_Three\OOP_Assessment_Three\bin\Debug\netcoreapp3.1
     class Human : Player
     {
         //The below will override the ID interger and return a value of 1 when called by a human object.
@@ -27,6 +29,7 @@ namespace OOP_Assessment_Three
             CardsPlayed.Add(HandList[1]);// Adds the second card from the players hand to the played space.
             Total = CardsPlayed[0].cardNumber + CardsPlayed[1].cardNumber; // Sets the total that is created in the Player class. 
             Console.WriteLine("You have played the " + CardsPlayed[0].cardName + " and the " + CardsPlayed[1].cardName + "\nGiving you a total of " + Total + ".");
+            File.AppendAllText("Log.txt", "Card 1 " + CardsPlayed[0].cardName + " Card 2 " + CardsPlayed[1].cardName + "\nTotal " + Total + ".\n");
             HandList.RemoveAt(0); // Removes the played card from the users hand.
             HandList.RemoveAt(0); // Removes the played card from the users hand.
         }

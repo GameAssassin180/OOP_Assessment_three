@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace OOP_Assessment_Three
 {
+    // Log file located at OOP_Assessment_Three\OOP_Assessment_Three\bin\Debug\netcoreapp3.1
     class Deck
     {
         // Below is a list of cards from the card class
@@ -30,7 +32,7 @@ namespace OOP_Assessment_Three
         // This method shuffles the deck.
         public void Shuffle()
         {
-            for(int i = 0; i < 100; i++)
+            for(int i = 0; i < 100 ; i++)
             {
                 Random rnd = new Random();
                 int Location1 = rnd.Next(0, 52); // Generates a number between 0 and 51.
@@ -61,6 +63,10 @@ namespace OOP_Assessment_Three
         {
             DeckFiller();
             Shuffle();
+            for (int i = 0; i < 52; i++)
+            {
+                File.AppendAllText("Log.txt", deckList[i].cardName + "\n");
+            }
             Program P = new Program(); // Creates a new instance of the program class. 
             P.CreatedDeck(); // Runs the created deck method from the program class. 
         }
